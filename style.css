@@ -35,3 +35,6 @@ section input {
   height: 2rem;
   color: black;
 }
+section #output-box {
+  margin:2rem;
+}
