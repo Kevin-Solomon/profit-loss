@@ -14,13 +14,13 @@ function calculateProfitLoss(initialPrice, quantity, currPrice) {
   if (initialPrice > currPrice) {
     let loss = (initialPrice - currPrice) * quantity;
     let lossPercentage = (loss / initialPrice) * 100;
-    outputDiv.innerText = (`Hey the loss is ${loss} and loss percentage is ${lossPercentage}`)
+    outputDiv.innerText = (`Hey the loss is ${loss.toFixed(2)} and loss percentage is ${lossPercentage.toFixed(2)}%`)
 
   }
   else if (currPrice > initialPrice) {
     let profit = (currPrice - initialPrice) * quantity;
     let profitPercentage = (profit / initialPrice) * 100;
-    outputDiv.innerText = (`Hey the profit is ${profit} and profit percentage is ${profitPercentage}`)
+    outputDiv.innerText = (`Hey the profit is ${profit.toFixed(2)} and profit percentage is ${profitPercentage.toFixed(2)}%`)
 
   }
   else {
