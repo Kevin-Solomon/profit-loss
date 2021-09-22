@@ -24,6 +24,6 @@ function calculateProfitLoss(initialPrice, quantity, currPrice) {
 
   }
   else {
-    console.log("no pain no gain")
+    outputDiv.innerText = "no pain no gain"
   }
 }
